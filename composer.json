@@ -1,0 +1,30 @@
+{
+    "name": "ivan770/laravel-spartan",
+    "description": "Laravel driver for Spartan MQ",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ivan770",
+            "email": "leshenko.ivan770@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "illuminate/contracts": "^8.0",
+        "illuminate/queue": "^8.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ivan770\\Spartan\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ivan770\\Spartan\\ServiceProvider"
+            ]
+        }
+    }
+}
